@@ -33,7 +33,6 @@ def check_slots_by_pincodes(pincodes_list:List = pincodes_list):
 
     for pincode in pincodes_list:
 
-
         PINCODE_URL = f"https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode={pincode}&date={todays_date}"
         r = requests.get(url=PINCODE_URL)
 
